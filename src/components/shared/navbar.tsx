@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Logo from "../../../public/images/logo.webp";
+import Logo from "../../../public/images/Logo.webp";
 import toggle from "../../../public/images/siderbar-icons/toggle.svg";
 import Magnifier from "../../../public/images/siderbar-icons/magnifier.svg";
 import Notification from "../../../public/images/siderbar-icons/notification.svg";
