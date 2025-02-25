@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Siderbar from "@/components/shared/siderbar";
 import Navbar from "@/components/shared/navbar";
-import { useState } from "react";
 import SidebarProvider from "@/components/siderbarContext";
 
 const poppins = Poppins({
@@ -12,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Integration Xperts",
-  description: "Test Task",
+  title: "SysPay",
+  description: "Test Task Provided By Integration Xperts",
 };
 
 export default function RootLayout({

@@ -11,11 +11,12 @@ const LanguageSelector = () => {
   ];
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [selectedLanguage] = useState("en");
 
   const toggleDropdown = () => {
     setIsDropdownOpen((prev) => !prev);
   };
+
   return (
     <>
       <div className="relative inline-block w-full">
@@ -69,7 +70,7 @@ const LanguageSelector = () => {
                   // onClick={() => handleLanguageChange(lang.code)}
                   className="flex items-center p-2 hover:bg-[#FEFEFE0F] cursor-pointer mb-1"
                 >
-                  <img
+                  <Image
                     src={lang.flag}
                     alt={lang.name}
                     className="w-6 h-6 mr-2"
