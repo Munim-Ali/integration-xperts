@@ -18,7 +18,7 @@ import worldMap from "../../../public/world.svg";
 const Dashboard = () => {
   return (
     <>
-      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-5 flex-1">
+      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between lg:gap-5 flex-1">
         <CardWrapper width="w-full lg:w-[59%]">
           <div className="w-full flex flex-row items-center justify-between">
             <div>
@@ -74,7 +74,7 @@ const Dashboard = () => {
           </div>
         </CardWrapper>
 
-        <CardWrapper width="w-full lg:w-[41%]">
+        <CardWrapper width="w-full lg:w-[41%] mt-0">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Visitor Insights
           </h3>
@@ -84,7 +84,7 @@ const Dashboard = () => {
         </CardWrapper>
       </section>
 
-      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-5 flex-1 ">
+      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between lg:gap-5 flex-1 ">
         <CardWrapper width="w-full lg:w-[42%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Total Revenue
@@ -111,7 +111,7 @@ const Dashboard = () => {
         </CardWrapper>
       </section>
 
-      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-5 flex-1 ">
+      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between lg:gap-5 flex-1 ">
         <CardWrapper width="w-full lg:w-[42%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Top Products

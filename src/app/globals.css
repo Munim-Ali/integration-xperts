@@ -5,3 +5,22 @@
 .card-shadow {
   box-shadow: 0px 4px 20px 0px #eeeeee80;
 }
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+  background: transparent;
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0095ff;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}

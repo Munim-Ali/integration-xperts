@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`bg-white p-6 lg:p-6 transition-transform duration-300 lg:translate-x-0 fixed overflow-y-auto top-0 left-0 h-full  w-full lg:w-[270px] 3xl:h-screen lg:flex lg:flex-col lg:justify-between z-50 ${
+        className={`bg-white p-6 lg:pb-20  lg:p-6 transition-transform duration-300 lg:translate-x-0 fixed overflow-y-auto md:top-20  xl:top-16 left-0 h-full  w-full lg:w-[270px] 3xl:h-screen lg:flex lg:flex-col lg:justify-between z-10  ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -30,9 +30,7 @@ const Sidebar = () => {
             onClick={toggleSidebar}
             className="block lg:hidden absolute top-0 left-0"
           />
-          <div className="w-full flex justify-center pb-8 ">
-            <Image src={Logo} alt="logo" width={120} height={48} />
-          </div>
+
           {SiderbarMenu.map((item) => (
             <Link
               href={item.link}
