@@ -5,7 +5,7 @@
 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/Munim-Ali/integration-xperts.git
 cd project-name
 ```
 
