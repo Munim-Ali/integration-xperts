@@ -9,7 +9,7 @@ const CardWrapper = ({ width, children }: CardProps) => {
   return (
     <>
       <section
-        className={`${width} bg-white card-shadow rounded-2xl border border-[#F8F9FA] p-6 flex flex-col items-stretch justify-between`}
+        className={`${width} bg-white card-shadow rounded-2xl border border-[#F8F9FA] p-6 flex flex-col items-stretch justify-start`}
       >
         {children}
       </section>

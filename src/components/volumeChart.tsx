@@ -12,6 +12,7 @@ const VolumeChart = () => {
     chart: {
       type: "bar",
       stacked: true,
+      height: 200,
       toolbar: { show: false },
     },
     colors: ["#0095FF", "#00E096"],

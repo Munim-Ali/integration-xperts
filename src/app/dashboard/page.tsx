@@ -121,15 +121,13 @@ const Dashboard = () => {
         </CardWrapper>
         <CardWrapper width="w-full lg:w-[30%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
-            Customer Satisfaction
+            Sales Mapping by Country
           </h3>
-          <div className="w-full">
-            <CustomerSatisfaction />
-          </div>
+          <div className="w-full"></div>
         </CardWrapper>
         <CardWrapper width="w-full lg:w-[28%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
-            Volume vs Service Level{" "}
+            Volume vs Service Level
           </h3>
           <div className="w-full">
             <VolumeChart />
