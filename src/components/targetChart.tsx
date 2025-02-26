@@ -13,21 +13,20 @@ const TargetChart = () => {
     chart: {
       type: "bar",
       toolbar: { show: false },
-      height: 400,
+
       width: "100%",
     },
     colors: ["#4AB58E", "#FFCF00"], // Green & Yellow
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: "58%",
-        borderRadius: 5,
-        borderRadiusApplication: "end",
+        columnWidth: "50%",
+        borderRadius: 2,
       },
     },
     stroke: {
       show: true,
-      width: 2,
+      width: 1.5,
       colors: ["transparent"],
     },
     xaxis: {

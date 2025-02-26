@@ -12,6 +12,7 @@ import RevenueChart from "@/components/revenueChart";
 import CustomerSatisfaction from "@/components/customerChart";
 import TargetChart from "@/components/targetChart";
 import ProductsTable from "@/components/productsTable";
+import VolumeChart from "@/components/volumeChart";
 
 const Dashboard = () => {
   return (
@@ -83,7 +84,7 @@ const Dashboard = () => {
       </section>
 
       <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-3 flex-1 mt-6">
-        <CardWrapper width="w-full lg:w-[39%]">
+        <CardWrapper width="w-full lg:w-[42%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Total Revenue
           </h3>
@@ -91,7 +92,7 @@ const Dashboard = () => {
             <RevenueChart />
           </div>
         </CardWrapper>
-        <CardWrapper width="w-full lg:w-[29%]">
+        <CardWrapper width="w-full lg:w-[30%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Customer Satisfaction
           </h3>
@@ -99,7 +100,7 @@ const Dashboard = () => {
             <CustomerSatisfaction />
           </div>
         </CardWrapper>
-        <CardWrapper width="w-full lg:w-[29%]">
+        <CardWrapper width="w-full lg:w-[28%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Target vs Reality
           </h3>
@@ -110,12 +111,28 @@ const Dashboard = () => {
       </section>
 
       <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-3 flex-1 mt-6">
-        <CardWrapper width="w-full lg:w-[39%]">
+        <CardWrapper width="w-full lg:w-[42%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Top Products
           </h3>
           <div className="w-full mt-4">
             <ProductsTable />
+          </div>
+        </CardWrapper>
+        <CardWrapper width="w-full lg:w-[30%]">
+          <h3 className="text-[18px] font-semibold text-[#05004E]">
+            Customer Satisfaction
+          </h3>
+          <div className="w-full">
+            <CustomerSatisfaction />
+          </div>
+        </CardWrapper>
+        <CardWrapper width="w-full lg:w-[28%]">
+          <h3 className="text-[18px] font-semibold text-[#05004E]">
+            Volume vs Service Level{" "}
+          </h3>
+          <div className="w-full">
+            <VolumeChart />
           </div>
         </CardWrapper>
       </section>

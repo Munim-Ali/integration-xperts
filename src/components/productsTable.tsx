@@ -56,7 +56,7 @@ const ProductsTable = () => {
             <th className="text-[#96A5B8] text-[11px] font-normal py-2">
               Popularity
             </th>
-            <th className="text-[#96A5B8] text-[11px] font-normal py-2">
+            <th className="text-[#96A5B8] text-[11px] font-normal py-2 pl-12">
               Sales
             </th>
           </tr>
@@ -64,15 +64,15 @@ const ProductsTable = () => {
         <tbody>
           {products.map((product) => (
             <tr key={product.id} className="border-b border-[#EDF2F6]">
-              <td className="py-4 text-[#444A6D] text-[12px] font-normal">
+              <td className="w-[5%] py-4 text-[#444A6D] text-[12px] font-normal">
                 {product.id}
               </td>
-              <td className="py-4 text-[#444A6D] text-[12px] font-normal">
+              <td className="w-[45%] py-4 text-[#444A6D] text-[12px] font-normal">
                 {product.name}
               </td>
-              <td className="py-4">
+              <td className="py-4 w-[30%] ">
                 <div
-                  className={`w-40 h-1 ${product.bgColor}  rounded-full relative`}
+                  className={`w-full h-1 ${product.bgColor}  rounded-full relative`}
                 >
                   <div
                     className={`absolute top-0 left-0 w-full h-full ${product.color} rounded-full`}
@@ -80,7 +80,7 @@ const ProductsTable = () => {
                   ></div>
                 </div>
               </td>
-              <td className="py-3">
+              <td className="py-3 w-full pl-12 ">
                 <span
                   className={`px-3 py-1 ${product.textBgColor}  text-[12px] font-normal ${product.textColor} border ${product.borderColor} rounded-lg`}
                 >
