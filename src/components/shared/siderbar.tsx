@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`bg-white p-6 lg:p-6 transition-transform duration-300 lg:translate-x-0 fixed lg:relative top-0 left-0 h-full  w-full lg:w-[300px] 3xl:h-screen lg:flex lg:flex-col lg:justify-between z-50 ${
+        className={`bg-white p-6 lg:p-6 transition-transform duration-300 lg:translate-x-0 fixed overflow-y-auto top-0 left-0 h-full  w-full lg:w-[300px] 3xl:h-screen lg:flex lg:flex-col lg:justify-between z-50 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

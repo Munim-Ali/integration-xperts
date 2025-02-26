@@ -73,7 +73,9 @@ const LanguageSelector = () => {
                   <Image
                     src={lang.flag}
                     alt={lang.name}
-                    className="w-6 h-6 mr-2"
+                    width={24}
+                    height={24}
+                    className=" mr-2"
                   />
                   <p className="text-[15px]">{lang.name}</p>
                 </li>

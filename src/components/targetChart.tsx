@@ -19,9 +19,16 @@ const TargetChart = () => {
     colors: ["#4AB58E", "#FFCF00"], // Green & Yellow
     plotOptions: {
       bar: {
-        columnWidth: "50%",
-        borderRadius: 0,
+        horizontal: false,
+        columnWidth: "58%",
+        borderRadius: 5,
+        borderRadiusApplication: "end",
       },
+    },
+    stroke: {
+      show: true,
+      width: 2,
+      colors: ["transparent"],
     },
     xaxis: {
       categories: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July"],
