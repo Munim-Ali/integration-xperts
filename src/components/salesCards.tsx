@@ -13,7 +13,7 @@ const SalesCards = ({ image, number, description, pnl, bgColor }: Props) => {
   return (
     <>
       <div
-        className={`w-[48%] md:w-[48%] xl:w-[23%] ${bgColor} rounded-lg p-4 mb-2`}
+        className={`w-full md:w-[47%] xl:w-[22%] ${bgColor} rounded-lg p-3 mb-2`}
       >
         <Image src={image} width={32} height={32} alt="sales icon" />
         <h3 className="text-[20px] font-semibold text-[#151D48] mt-4 ">

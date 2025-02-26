@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const LanguageSelector = () => {
   const languages = [
-    { code: "en", name: "English", flag: enFlag.src },
+    { code: "en", name: "Eng (US)", flag: enFlag.src },
     { code: "ru", name: "Russian", flag: enFlag.src },
     { code: "nl", name: "Dutch", flag: enFlag.src },
   ];
@@ -23,7 +23,7 @@ const LanguageSelector = () => {
         {/* Button to toggle dropdown */}
         <button
           onClick={toggleDropdown}
-          className="w-full flex items-center justify-between p-2 bg-[#FEFEFE0F] rounded-md border border-[#FEFEFE33] py-3 px-6"
+          className="w-full flex items-center justify-center p-2 bg-[#FEFEFE0F] rounded-md border border-[#FEFEFE33] py-3 px-6"
         >
           <div className="flex items-center">
             <Image
@@ -31,8 +31,8 @@ const LanguageSelector = () => {
                 languages.find((lang) => lang.code === selectedLanguage)?.flag
               }
               alt={selectedLanguage}
-              width={24}
-              height={24}
+              width={18}
+              height={18}
               className="mr-2"
             />
 

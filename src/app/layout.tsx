@@ -27,7 +27,7 @@ export default function RootLayout({
       >
         <SidebarProvider>
           <Siderbar />
-          <main className="w-full lg:pl-[300px]">
+          <main className="w-full lg:pl-[270px]">
             <Navbar />
             <div className="p-4 lg:p-6 w-full">{children}</div>
           </main>

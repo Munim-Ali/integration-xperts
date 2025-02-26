@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`bg-white p-6 lg:p-6 transition-transform duration-300 lg:translate-x-0 fixed overflow-y-auto top-0 left-0 h-full  w-full lg:w-[300px] 3xl:h-screen lg:flex lg:flex-col lg:justify-between z-50 ${
+        className={`bg-white p-6 lg:p-6 transition-transform duration-300 lg:translate-x-0 fixed overflow-y-auto top-0 left-0 h-full  w-full lg:w-[270px] 3xl:h-screen lg:flex lg:flex-col lg:justify-between z-50 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -36,7 +36,7 @@ const Sidebar = () => {
           {SiderbarMenu.map((item) => (
             <Link
               href={item.link}
-              className={`flex flex-row items-center justify-center py-4 px-3 cursor-pointer rounded-xl hover:bg-blue hover:text-white mb-2 ${
+              className={`flex flex-row items-center justify-center py-4 pr-2 cursor-pointer rounded-xl hover:bg-blue hover:text-white mb-2 ${
                 pathname === item.link
                   ? "bg-blue text-[#fff] font-semibold"
                   : "text-gray"
@@ -58,15 +58,17 @@ const Sidebar = () => {
           ))}
         </div>
         <div
-          className=" p-10 bg-cover bg-no-repeat bg-center rounded-2xl mt-8 "
+          className="py-10 px-4  lg:p-10 bg-cover bg-no-repeat bg-center rounded-2xl mt-8 "
           style={{ backgroundImage: `url(${GetProBg.src})` }}
         >
-          <div className="w-full flex flex-col items-center justify-center">
-            <Image src={Prologo} alt="pro-logo" />
-            <p className="text-white opacity-80 text-[12px] font-medium mt-3 w-2/3 text-center leading-4">
-              Get access to all features
-            </p>
-            <button className="bg-white rounded-md py-1 px-8 font-poppins text-blue font-semibold mt-8">
+          <div className="flex flex-row lg:flex-col items-center justify-between ">
+            <div className="w-full flex flex-col  items-center justify-center">
+              <Image src={Prologo} alt="pro-logo" />
+              <p className="text-white opacity-80 text-[12px] font-medium mt-3 w-2/3 text-center leading-4">
+                Get access to all features
+              </p>
+            </div>
+            <button className="w-full bg-white rounded-md py-2 px-8 font-poppins text-blue font-semibold lg:mt-8">
               Get Pro
             </button>
           </div>

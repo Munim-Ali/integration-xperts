@@ -13,11 +13,12 @@ import CustomerSatisfaction from "@/components/customerChart";
 import TargetChart from "@/components/targetChart";
 import ProductsTable from "@/components/productsTable";
 import VolumeChart from "@/components/volumeChart";
+import worldMap from "../../../public/world.svg";
 
 const Dashboard = () => {
   return (
     <>
-      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-3 flex-1">
+      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-5 flex-1">
         <CardWrapper width="w-full lg:w-[59%]">
           <div className="w-full flex flex-row items-center justify-between">
             <div>
@@ -41,7 +42,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="w-full flex flex-row items-center justify-between gap-3  flex-wrap mt-8">
+          <div className="w-full flex flex-row items-center justify-between gap-5  flex-wrap mt-8">
             <SalesCards
               bgColor="bg-[#FFE2E5]"
               image={sales}
@@ -83,7 +84,7 @@ const Dashboard = () => {
         </CardWrapper>
       </section>
 
-      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-3 flex-1 mt-6">
+      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-5 flex-1 ">
         <CardWrapper width="w-full lg:w-[42%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Total Revenue
@@ -110,7 +111,7 @@ const Dashboard = () => {
         </CardWrapper>
       </section>
 
-      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-3 flex-1 mt-6">
+      <section className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-5 flex-1 ">
         <CardWrapper width="w-full lg:w-[42%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Top Products
@@ -123,7 +124,15 @@ const Dashboard = () => {
           <h3 className="text-[18px] font-semibold text-[#05004E]">
             Sales Mapping by Country
           </h3>
-          <div className="w-full"></div>
+          <div className="w-full">
+            <Image
+              src={worldMap}
+              alt="world map"
+              width={380}
+              height={230}
+              className="w-full h-full mt-8"
+            />
+          </div>
         </CardWrapper>
         <CardWrapper width="w-full lg:w-[28%]">
           <h3 className="text-[18px] font-semibold text-[#05004E]">

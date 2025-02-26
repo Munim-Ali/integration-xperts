@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full bg-white flex items-center justify-between py-3 px-4 lg:px-8">
+      <div className="w-full bg-white flex items-center justify-between py-3 px-4 lg:px-8 ">
         <div className="w-1/4 flex items-center justify-start">
           <Image
             src={toggle}
@@ -34,7 +34,7 @@ const Navbar = () => {
             height={28}
             className="block ml-2 lg:hidden"
           />
-          <h3 className="hidden lg:block text-black text-[24px] font-semibold capitalize">
+          <h3 className="hidden lg:block text-[#151D48] text-[24px] font-semibold capitalize">
             {displayPath}
           </h3>
         </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
               name="search"
               id=""
               placeholder="Search here..."
-              className="text-[14px] bg-transparent ml-2 outline-none focus:outline-none"
+              className="text-[14px] text-[#737791] bg-transparent ml-2 outline-none focus:outline-none"
             />
           </div>
           <div className="w-1/3 ml-4">
@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
         <div className="w-1/2 lg:w-1/3 flex flex-row items-center justify-end cursor-pointer pl-8">
           <Image src={Notification} alt="notification" width={40} height={40} />
-          <div className="w-1/2  flex items-center justify-end ml-4">
+          <div className="w-1/2 3xl:w-1/3  flex items-center justify-center ml-4">
             <Image src={Profile} alt="notification" width={40} height={40} />
             <div className="w-[60%] ml-3 hidden lg:block">
               <h4 className="font-medium text-[14px]">Musfiq</h4>
