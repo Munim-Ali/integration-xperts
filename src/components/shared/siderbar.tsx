@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Logo from "../../../public/images/Logo.webp";
 import GetProBg from "../../../public/images/getpro-bg.webp";
 import Prologo from "../../../public/images/pro-logo.png";
 import Close from "../../../public/images/siderbar-icons/close.svg";
