@@ -1,4 +1,4 @@
-## Project Name
+## SysPay - Integration Xperts Test Task
 
 **🚀 Project Setup Instructions**
 
